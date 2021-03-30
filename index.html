@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-image: linear-gradient(rgba(255,255,255, .3),rgba(255,255,255, 1)), url(bg2.jpg);
+            background-size: cover;
+            height: 100vh;
+            
+            }
+        .nav {overflow: hidden; 
+              list-style-type: none;
+              background-color: rgba(87,89,93,0.5);
+              padding: 12px 12px;
+              }
+        .nav a {float: left;
+                font-size: 15px;
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                }
+        h1{
+            font-family: 'Segoe UI';
+            font-weight: 400;
+            font-size: 18pt;
+            text-transform: uppercase;
+
+        }
+        h2 {
+            font-family: 'Segoe UI';
+            text-align: center;
+            font-weight: 400;
+        }
+        #h1 {
+            font-family: 'Segoe UI';
+            font-size: 12pt;
+            font-weight: 400;
+        }
+        .con {
+            font-family: 'Segoe UI';
+            font-weight: 300;
+        }
+        h3 { display: inline;
+            padding: 12px 12px;
+            font-weight: 400;
+            font-family: 'Segoe UI';
+            }
+
+        img {
+            float: left;
+        }
+        .mo {
+            font-style: italic;
+            font-weight: 400;
+            padding: 5%;
+            color: #3d3d3d;
+        }
+        header {
+            font-family: 'Segoe UI';
+            font-size: 49pt;
+            color: #FF0000;
+            text-transform: uppercase;
+        }
+        #add {
+            font-family: 'Segoe UI';
+            font-weight: 400;
+            margin: 0;
+
+        }
+        .slide {width: 80%;
+                height: 25%;
+                background-color: rgba(255,255,255, 0.5);
+                border: 1px solid gray;
+                overflow: hidden; 
+                margin: auto;
+                }
+        .ban {display: flex;
+              position: relative;
+              top: 0; right: 0;
+              }
+        .content {box-sizing: border-box;
+            /*padding: 10px;*/
+            width: 100%;
+            flex-shrink: 0;
+            text-align: center;
+ 
+        }
+         @keyframes slideh {
+            0% {right: 0%;}
+            20% { right: 0%; }
+            25% { right: 100%; }
+            45% { right: 100%; }
+            50% { right: 200%; }
+            70% { right: 200%; }
+            75% { right: 300%; }
+            95% { right: 300%; }
+            100% { right: 0%; }
+         }
+         .ban { animation: slideh 20s linear infinite; }
+         .ban:hover { animation-play-state: running;}
+         .box {margin: auto;
+               width: 100%;
+               border: 1px solid gray;
+               padding: 2px;}
+        .img1 {float: right; 
+               overflow: auto;
+               width: 39%;}
+        p {
+            text-indent: 50px;
+            font-family: 'Segoe UI';
+            font-size: 12pt;
+        }
+
+    </style>
+    <head>
+        <img src="logo.png" width="120px" alt="logo">
+        <header>University of Baguio</header>
+        <p id="add">General Luna Road, Baguio City</p><br>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="homepage.html" target="_self"></a><h3>Home</h3>
+            <h3>Campus Map</h3>
+            <h3>Student Portal</h3></a>
+        </div>
+        <h1>Welcome!</h1>
+        <p id="h1">This website is for academic purposes only. All information are true and will be properly credited to 
+            University of Baguio website.</p>
+            <div class="slide">
+            <div class="ban">
+                <div class="content">
+                <h2 class="mo">"In the Persuit of Perfection"</h2></div>
+                <div class="content">
+                <h2>Mission</h2>
+                <p class="con">The University of Baguio educates individuals to be <br>
+                empowered professionals in the global community.</p></div>
+                <div class="content">
+                <h2>Vision</h2>
+                <p class="con">In persuit of perfection, the University of Baguio is<br>
+                committed to provide balanced quality education by<br>
+                nurturing academic excellence, relevant social skills and<br>
+                ethical values in a fun learning environment.</p></div>
+                <div class="content">
+                <h2 class="mo">It's all up here</h2></div>
+            </div>
+            </div><br>
+    <div class="box">
+        <img class="img1" src="hello.jpg">
+        <p>Constantly abreast with the latest trends in its various fields of specialization, UB prepares its students for the 
+            ever-competitive world of work that awaits them after college. Its competent faculty, cutting-edge facilities, harmonious 
+            family culture, healthy campus politics, and wholesome intra-school competitions perfectly complement the cool climate of 
+            the country's summer capital, making learning fun and worthwhile.</p>
+        <p>The University of Baguio welcomes students from all walks of life, races, and beliefs. Through its more than 
+            six decades of existence, UB has nurtured generations of students from Baguio City, the greater Cordillera region, 
+            the rest of the country, and at least 19 foreign nations. </p>
+    </div>
+    </body>
+
+</html>
